@@ -14,6 +14,10 @@
 		B4264C8D29572E00008B2E78 /* Hacker_News_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4264C8C29572E00008B2E78 /* Hacker_News_SwiftUITests.swift */; };
 		B4264C9729572E00008B2E78 /* Hacker_News_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4264C9629572E00008B2E78 /* Hacker_News_SwiftUIUITests.swift */; };
 		B4264C9929572E00008B2E78 /* Hacker_News_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4264C9829572E00008B2E78 /* Hacker_News_SwiftUIUITestsLaunchTests.swift */; };
+		B4264CA7295732FB008B2E78 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4264CA6295732FB008B2E78 /* NetworkManager.swift */; };
+		B4264CA929573309008B2E78 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4264CA829573309008B2E78 /* PostData.swift */; };
+		B4264CAC29574B43008B2E78 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4264CAB29574B43008B2E78 /* DetailView.swift */; };
+		B4264CAE29574D6D008B2E78 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4264CAD29574D6D008B2E78 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		B4264C9229572E00008B2E78 /* Hacker News SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hacker News SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4264C9629572E00008B2E78 /* Hacker_News_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hacker_News_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		B4264C9829572E00008B2E78 /* Hacker_News_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hacker_News_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4264CA6295732FB008B2E78 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B4264CA829573309008B2E78 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		B4264CAB29574B43008B2E78 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B4264CAD29574D6D008B2E78 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		B4264CAF29574F6C008B2E78 /* Hacker News SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hacker News SwiftUI.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +103,10 @@
 		B4264C7A29572DFD008B2E78 /* Hacker News SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B4264CAF29574F6C008B2E78 /* Hacker News SwiftUI.entitlements */,
+				B4264CAA29574B22008B2E78 /* View */,
+				B4264CA5295732D4008B2E78 /* Models */,
 				B4264C7B29572DFD008B2E78 /* Hacker_News_SwiftUIApp.swift */,
-				B4264C7D29572DFD008B2E78 /* ContentView.swift */,
 				B4264C7F29572E00008B2E78 /* Assets.xcassets */,
 				B4264C8129572E00008B2E78 /* Preview Content */,
 			);
@@ -125,6 +136,25 @@
 				B4264C9829572E00008B2E78 /* Hacker_News_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = "Hacker News SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		B4264CA5295732D4008B2E78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4264CA6295732FB008B2E78 /* NetworkManager.swift */,
+				B4264CA829573309008B2E78 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B4264CAA29574B22008B2E78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4264C7D29572DFD008B2E78 /* ContentView.swift */,
+				B4264CAB29574B43008B2E78 /* DetailView.swift */,
+				B4264CAD29574D6D008B2E78 /* WebView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4264CA7295732FB008B2E78 /* NetworkManager.swift in Sources */,
+				B4264CA929573309008B2E78 /* PostData.swift in Sources */,
 				B4264C7E29572DFD008B2E78 /* ContentView.swift in Sources */,
+				B4264CAE29574D6D008B2E78 /* WebView.swift in Sources */,
+				B4264CAC29574B43008B2E78 /* DetailView.swift in Sources */,
 				B4264C7C29572DFD008B2E78 /* Hacker_News_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hacker News SwiftUI/Hacker News SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hacker News SwiftUI/Preview Content\"";
@@ -425,6 +460,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,6 +468,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chitraarasu.closure.Hacker-News-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hacker News SwiftUI/Hacker News SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hacker News SwiftUI/Preview Content\"";
@@ -454,6 +494,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +502,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chitraarasu.closure.Hacker-News-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
